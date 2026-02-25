@@ -1,0 +1,24 @@
+{
+    "name": "gym-tracker",
+    "version": "1.0.0",
+    "type": "module",
+    "description": "Granular gym tracking with Svelte and Vite",
+    "main": "server.js",
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build",
+        "preview": "vite preview",
+        "start": "node server.js",
+        "server": "node server.js"
+    },
+    "dependencies": {
+        "better-sqlite3": "^9.4.3",
+        "express": "^4.18.2",
+        "lucide-svelte": "^0.344.0"
+    },
+    "devDependencies": {
+        "@sveltejs/vite-plugin-svelte": "^3.0.2",
+        "svelte": "^4.2.12",
+        "vite": "^5.1.4"
+    }
+}
