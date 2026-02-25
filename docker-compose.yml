@@ -1,0 +1,25 @@
+services:
+    gym-tracker:
+        image: node:20-alpine
+        container_name: gym-tracker
+        working_dir: /app
+        volumes:
+            - ./app:/app
+            - ./data:/data
+        ports:
+            - "3005:3000"
+        command: sh -c "npm install --include=dev && npm run build && npm start"
+        environment:
+            - NODE_ENV=development
+            - PORT=3000
+            - DATA_DIR=/data
+        restart: unless-stopped
+        networks:
+            - gym-network
+            - nextcloud_proxy_network
+
+networks:
+    gym-network:
+        driver: bridge
+    nextcloud_proxy_network:
+        external: true
