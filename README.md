@@ -1,6 +1,6 @@
 # Gym Tracker
 
-![Dashboard Screenshot](https://github.com/mateocovacho/gym-tracker/blob/main/resources/dashboard.png?raw=true)
+![](https://github.com/mateocovacho/gym-tracker/blob/main/Screenshot_20260225_133841.png?raw=true)
 
 Granular gym tracking with muscle-level analytics. Know exactly which muscles are ready to work.
 
